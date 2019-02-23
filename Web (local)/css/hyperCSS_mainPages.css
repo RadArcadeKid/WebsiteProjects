@@ -1,0 +1,230 @@
+/*Jake Henson, 2019*/
+body{
+
+	background-color: rgb(0,0,0);
+	color:rgb(255,255,255); /*Font color is white*/
+	font-family: 'gameplayregular';
+  	text-align: center;
+}
+
+h1{
+	font-size:5em;
+	font-family: 'gameplayregular';
+	text-align: center;
+    background-color:rgb(0, 0, 0); /*Black background color*/
+
+    margin-left: 30%; /*Learned a bit about margins so that the boxes would look nicer - https://www.w3schools.com/css/css_margin.asp*/
+    margin-right: 30%;
+
+    /*Used a tutorial to learn how to add padding --     https://www.w3schools.com/css/css_padding.asp
+    and how to add borders to the boxes --      https://www.w3schools.com/css/css_border.asp 
+    to get that nice crisp text border effect, similar to old video game dialogue boxes*/
+
+    padding-top: 10px; /*Padding gives that extra black edge around the text*/
+    padding-bottom: 17px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-style: solid; /*Solid border around the edges*/
+    border-width: 2px; /*Thin border, gives that more rpg style look*/
+    border-color:rgb(255,255,255); /*White border around the edges*/
+}
+
+h2{
+	font-size:4em;
+	color:rgb(255, 255, 255);
+	font-family: 'pixeltyperegular';
+}
+h3
+{
+	font-size:2em;
+	font-family: 'pixeltyperegular';
+    text-align: center;
+    letter-spacing: 2px;
+
+    margin-left: 40%;
+    margin-right: 40%; 
+    background-color:rgb(0, 0, 0);
+
+    /*Used a tutorial to learn how to add padding -- https://www.w3schools.com/css/css_padding.asp
+    and how to add borders to the boxes --  https://www.w3schools.com/css/css_border.asp
+    to get that nice crisp text border effect, similar to old video game dialogue boxes*/ 
+
+    padding-top: 10px; /*Padding gives that extra black edge around the text*/
+    padding-bottom: 5px;
+    padding-left: 10px;
+    padding-right: 10px;
+
+    border-style: solid; /*Solid border around the edges*/
+    border-width: 2px; /*Thin border, gives that more rpg style look*/
+    border-color:rgb(255,255,255); /*White border around the edges*/
+}
+
+p{
+	font-size:25px;
+	color:rgb(255,255,255);
+	font-family: 'zelda_dx_tt_brkregular';
+    text-align: center;
+    margin-left: 20%;
+    margin-right: 20%;
+    background-color:rgb(0,0,0);
+
+    /*Used a tutorial to learn how to add padding --     https://www.w3schools.com/css/css_padding.asp
+    and how to add borders to the boxes --      https://www.w3schools.com/css/css_border.asp 
+    to get that nice crisp text border effect, similar to old video game dialogue boxes*/
+
+    padding-top: 20px; /*Padding gives that extra black edge around the text*/
+    padding-bottom: 20px;
+    padding-left: 30px;
+    padding-right: 30px;
+
+    border-style: solid;  /*Solid border around the edges*/
+    border-width: 5px; /*Thick border, gives that more rpg style look*/
+    border-color:rgb(255,255,255); /*White border around the edges*/
+}
+
+footer{
+	font-size:1em;
+	color:rgb(240,240,240);
+	font-family: 'zelda_dx_tt_brkregular';
+	margin: auto;
+}
+
+@font-face { /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'gameplayregular';
+    src: url('../fonts/gameplay-webfont.eot');
+    src: url('../fonts/gameplay-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gameplay-webfont.woff2') format('woff2'),
+         url('../fonts/gameplay-webfont.woff') format('woff'),
+         url('../fonts/gameplay-webfont.ttf') format('truetype'),
+         url('../fonts/gameplay-webfont.svg#gameplayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {  /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'pixeltyperegular';
+    src: url('../fonts/pixeltype-webfont.eot');
+    src: url('../fonts/pixeltype-web	font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pixeltype-webfont.woff2') format('woff2'),
+         url('../fonts/pixeltype-webfont.woff') format('woff'),
+         url('../fonts/pixeltype-webfont.ttf') format('truetype'),
+         url('../fonts/pixeltype-webfont.svg#pixeltyperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {   /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'zelda_dx_tt_brkregular';
+    src: url('../fonts/zeldadxt-webfont.eot');
+    src: url('../fonts/zeldadxt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zeldadxt-webfont.woff2') format('woff2'),
+         url('../fonts/zeldadxt-webfont.woff') format('woff'),
+         url('../fonts/zeldadxt-webfont.ttf') format('truetype'),
+         url('../fonts/zeldadxt-webfont.svg#zelda_dx_tt_brkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.customFont_gameplay_reg{ /*A custom class for this font, just in case*/
+    font-family: 'gameplayregular';  
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.zeldafont{
+	font-family: 'zelda_dx_tt_brkregular';
+	font-size: 2.5em;
+    margin: auto;
+}
+
+
+
+/*-----------BACKGROUND CLASSES-----------*/
+/*I created these as classes so that I can edit 
+the backgrounds of my various pages without having to do a new CSS page every time*/
+.fujiBG1{
+    background-image: url("../img/Fuji1_pixel_2_bw.png");
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+.dayMountainsBG2{
+    background-image: url("../img/mountains1_notrees_pixel_day.jpg"); /*Mountains Background image*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+
+    
+}
+.sunsetMountainsBG3{
+    background-image: url("../img/mountains1_notrees_pixel_sunset.jpg");
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.nightMountainsBG4{
+    background-image: url("../img/mountains1_notrees_pixel_nightAnimated.gif"); /*Just a quick little thing to note - I made this animated gif as a background, so that the stars twinkle automatically!*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.nightMountainsBG5{
+    background-image: url("../img/mountains_path1.gif"); /*Just a quick little thing to note - I made this animated gif as a background, so that the stars twinkle automatically!*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.nightMountainsBG6{
+    background-image: url("../img/mountains_path1_sky_withSnow.gif"); /*Just a quick little thing to note - I made this animated gif as a background, so that the stars twinkle automatically!*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.nightMountainsBG7{
+    background-image: url("../img/TEMPLETEST1.jpg"); /*Just a quick little thing to note - I made this animated gif as a background, so that the stars twinkle automatically!*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.room1BG8{
+    background-image: url("../img/room_bg1.jpg"); /*Just a quick little thing to note - I made this animated gif as a background, so that the stars twinkle automatically!*/
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+.fujiBG2{
+    background-image: url("../img/Fuji1_pixel_2_flip_color.png");
+    background-position: center center; 
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; 
+}
+
+
+
+/*----link colors-----*/
+a:link {
+  color:rgb(255,255,255);
+}
+
+/* visited link */
+a:visited {
+  color:rgb(250,250,250);
+}
+
+/* mouse over link */
+a:hover {
+  color: rgb(50,184,234);
+}

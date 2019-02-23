@@ -1,0 +1,114 @@
+/*Jake Henson, 2019*/
+body{
+    background-image: url("../img/bg_1_blue.png");
+    background-position: center center; /*x y*/
+    background-size: 100%;
+    background-repeat: no-repeat; /*repeat, repeat-x, repeat-y*/
+    background-attachment: fixed; /*scroll*/
+
+
+	/*background-color: rgb(27,189,191);*/
+	color:rgb(255,255,255);
+	font-family: 'gameplayregular';
+  	text-align: center;
+}
+
+h1{
+	font-size:6em;
+	font-family: 'gameplayregular';
+	text-align: center;
+	margin: auto;
+}
+
+h2{
+	font-size:3.5em;
+	color:rgb(255, 255, 255);
+	font-family: 'pixeltyperegular';
+}
+h3
+{
+	font-size:2em;
+	font-family: 'pixeltyperegular';
+}
+
+p{
+	font-size:1em;
+	color:rgb(255,255,255);
+	font-family: 'pixeltyperegular';
+}
+
+footer{
+	font-size:1em;
+	color:rgb(240,240,240);
+	font-family: 'zelda_dx_tt_brkregular';
+	margin: auto;
+}
+
+@font-face {  /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'gameplayregular';
+    src: url('../fonts/gameplay-webfont.eot');
+    src: url('../fonts/gameplay-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/gameplay-webfont.woff2') format('woff2'),
+         url('../fonts/gameplay-webfont.woff') format('woff'),
+         url('../fonts/gameplay-webfont.ttf') format('truetype'),
+         url('../fonts/gameplay-webfont.svg#gameplayregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {  /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'pixeltyperegular';
+    src: url('../fonts/pixeltype-webfont.eot');
+    src: url('../fonts/pixeltype-web	font.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/pixeltype-webfont.woff2') format('woff2'),
+         url('../fonts/pixeltype-webfont.woff') format('woff'),
+         url('../fonts/pixeltype-webfont.ttf') format('truetype'),
+         url('../fonts/pixeltype-webfont.svg#pixeltyperegular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {  /*Converted font originally found on DaFont.com, converted with Font Squirrel*/
+    font-family: 'zelda_dx_tt_brkregular';
+    src: url('../fonts/zeldadxt-webfont.eot');
+    src: url('../fonts/zeldadxt-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/zeldadxt-webfont.woff2') format('woff2'),
+         url('../fonts/zeldadxt-webfont.woff') format('woff'),
+         url('../fonts/zeldadxt-webfont.ttf') format('truetype'),
+         url('../fonts/zeldadxt-webfont.svg#zelda_dx_tt_brkregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+.customFont_gameplay_reg{
+    font-family: 'gameplayregular';  
+    font-size: 2.5em;
+    margin: auto;
+}
+
+.zeldafont{
+	font-family: 'zelda_dx_tt_brkregular';
+	font-size: 2.5em;
+    margin: auto;
+}
+
+
+
+/*SOURCE: I learned how to do this neat little "hover animation" from TutorialRepublic at this link:
+  https://www.tutorialrepublic.com/codelab.php?topic=faq&file=changing-image-on-hover-with-css
+
+  Essentially, it allows for the user to hover over 1 image and change to another
+  More or less animating the image on the title page, to look like a coin moving 
+*/
+.coin {
+	display: block;
+	width: 300px;
+    height: 250px;
+    background: url("../img/coin1outside_300x300.png") no-repeat;
+    margin: auto;
+    }
+.coin:hover {
+    background: url("../img/coin2inside_300x300.png") no-repeat;
+ }
